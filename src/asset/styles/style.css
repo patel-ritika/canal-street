@@ -1,0 +1,287 @@
+.food-title {
+    font-size: 10rem;
+  }
+  
+  .food-container,
+  .home-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .food-container::-webkit-scrollbar,
+  .home-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .single-announcement {
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #000,
+        #000 1px,
+        transparent 0,
+        transparent 68px
+      ),
+      repeating-linear-gradient(
+        45deg,
+        #000,
+        #000 1px,
+        transparent 0,
+        transparent 68px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        #000,
+        #000 1px,
+        transparent 0,
+        transparent 71px
+      ),
+      repeating-linear-gradient(
+        45deg,
+        #000,
+        #000 1px,
+        transparent 0,
+        transparent 70px
+      );
+    background-position: 0 101%, 0 101%, 0 0, 0 0;
+    background-size: 93px 50px, 93px 50px, 100px 50px, 100px 50px;
+    background-repeat: repeat-x;
+    animation: scroll-bg 5s linear infinite;
+    padding: 10rem;
+  }
+  
+  @keyframes scroll-bg {
+    0% {
+      background-position: 0 101%, 0 101%, 0 0, 0 0;
+    }
+  
+    100% {
+      background-position: 100px 101%, 100px 101%, -100px 0, -100px 0;
+    }
+  }
+  
+  .leftemoji {
+    animation: bounce 1s infinite alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  .rightemoji {
+    animation: bounce1 1s infinite alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.9s;
+    transform: rotate(180deg);
+  }
+  
+  @keyframes bounce1 {
+    0% {
+      transform: rotate(180deg) translateY(30px);
+    }
+  
+    100% {
+      transform: rotate(180deg) translateY(0);
+    }
+  }
+  
+  .rightemojicommunity {
+    animation: bounce2 1s infinite alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.9s;
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes bounce2 {
+    0% {
+      transform: rotateY(180deg) translateY(10px);
+    }
+  
+    100% {
+      transform: rotateY(180deg) translateY(-10px);
+    }
+  }
+  
+  .footer-title {
+    background-image: repeating-linear-gradient(
+        -74deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 1px,
+        transparent 0,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        -74deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 1px,
+        transparent 0,
+        transparent 4px
+      );
+    background-position: 0 0, 0 100%;
+    background-size: 100% 12px;
+    background-repeat: no-repeat;
+  }
+  
+  .footer-title-content {
+    padding: 60px;
+  }
+  
+  .single-events__item {
+    padding: 80px 0 60px;
+    background-image: repeating-linear-gradient(
+      -74deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5) 1px,
+      transparent 0,
+      transparent 8px
+    );
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: 100% 22px;
+  }
+  
+  .single-events__item_bottom {
+    padding: 80px 0 10px;
+    background-image: repeating-linear-gradient(
+      -74deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5) 1px,
+      transparent 0,
+      transparent 8px
+    );
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 22px;
+  }
+  
+  .featureimg {
+    background-image: url("../images/feature1.avif");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    padding: 5rem;
+    height: 500px;
+  }
+  
+  .single-radio__row {
+    padding: 75px 0 100px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+    animation: 0.8s infinite normal c;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+  }
+  
+  @keyframes c {
+    0% {
+      background-position-x: 0, 0;
+    }
+  
+    100% {
+      background-position-x: 24px, -24px;
+    }
+  }
+  
+  .header-title span {
+    padding-bottom: 4px;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #ffb400,
+        #ffb400 1px,
+        transparent 0,
+        transparent 12px
+      ),
+      repeating-linear-gradient(
+        45deg,
+        #ffb400,
+        #ffb400 1px,
+        transparent 0,
+        transparent 12.2px
+      );
+    background-position: 0 103%, 2px 103%;
+    background-size: 17px 10px;
+    background-repeat: repeat-x;
+    animation: 0.8s infinite normal header;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes header {
+    0% {
+      background-position-x: 0, 2px;
+    }
+  
+    100% {
+      background-position-x: 17px, 19px;
+    }
+  }
+  
+  .home-img-container {
+    height: 1100px;
+    width: 100%;
+  }
+  
+  .home-img-container img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .market-event-content {
+    padding: 75px 0 100px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+    animation: 0.8s infinite normal c;
+    animation-timing-function: linear;
+  }
+  
+  .market-event-content button {
+    left: 45%;
+  }
+  
+  @media (max-width: 768px) {
+    .home-img-container {
+      height: auto;
+      width: 100%;
+    }
+  
+    .home-img-container img {
+      height: 100%;
+      width: 100%;
+    }
+    .market-event-content {
+      padding: 40px 0;
+    }
+    .footer-title-content {
+      padding: 40px 0;
+    }
+    .food-title {
+      font-size: 50px;
+    }
+    .single-announcement {
+      padding: 5rem 0;
+    }
+    .featureimg {
+      background: none;
+      padding:  0;
+      height: auto;
+    }
+    .single-radio__row {
+      padding: 50px 0;
+    }
+  }
